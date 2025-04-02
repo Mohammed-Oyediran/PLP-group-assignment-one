@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body styling */
+body {
+    background-color: #040123;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #070221;  /* Dark background */
+    padding: 15px 20px;
+   
+}
+
+/* Styling the list */
+.nav-links {
+   
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+/* Styling the links */
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Navbar link styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;  /* Needed for the ::after pseudo-element */
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #c9c6f3; /* Underline color */
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* On hover, expand the underline */
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* On hover, change link color */
+.nav-links a:hover {
+    color: #c9c6f3;
+}
+
+/*Styling profile pix */
+
+.profile-pix {
+    width: 15rem;
+    display: block;
+    margin: 70px auto 25px auto ;
+    border-radius: 100%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/*Styling about section */
+
+#about {
+    width: 60%;
+    min-width: 400px;
+    margin: 50px auto;
+    padding: 0;
+    line-height: 40px auto;
+    text-align: center;
+    
+}
+
+.intro {
+    color: aqua;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+
+.name, .action{
+    color: #afdcf1;
+    font-size: 70px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.action {
+    color: #96d1ec;
+    font-size: 65px;
+}
+
+.summary {
+    color: #81969f;
+    line-height: 25px;
+    font-family: cursive;
+    margin-top: 30px;
+    
+}
+
+.plp-link{
+    color: aqua;
+    text-decoration: none;
+}
+
+/* Styling services section */
+
