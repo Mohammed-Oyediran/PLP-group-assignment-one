@@ -15,7 +15,7 @@
              <li><a href="index.html">Home</a></li>
              <li><a href="#about">About</a></li>
              <li><a href="#services">Services</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="#contact">Contact</a></li>
          </ul>
      </nav>
 
@@ -41,9 +41,100 @@
     <section id="services">
         <h2 class="myServices">Services</h2>
         <div class="container">
-            <div class="front-end"></div>
-            <div class="back-end"></div>
-            <div class="software-solutions"></div>
+            <div class="box">
+                <span class="tech"><h4>FrontEnd Development</h4></span>
+                <p class="fit-text">We are responsible for designing and implementing the visual and interactive elements of our client's website or web application that the users interact with directly. 
+                We build and design user interfaces using HTML, CSS, and JavaScript, ensuring responsiveness, performance, and interactivity. We ensure cross-browser compatibility, optimize user experience, and debug issues for a smooth, engaging web application. 🚀</p>
+            
+                <button class="readMore">Read more</button>
+            </div>
+            <div class="box">
+                <span class="tech"><h4>BackEnd Development</h4></span>
+                <p class="fit-text">We are responsible for the server-side of web applications, ensuring smooth functionality and performance. We develop and maintain server-side logic using languages like Node.js, Python, Java, or PHP, and manage databases such as MySQL or MongoDB for efficient data storage.We collaborate closely with front-end teams to ensure seamless integration between the user interface and server-side logic, while ensuring the system is scalable, secure, and efficient. 🚀</p>
+            
+                <button class="readMore backend-button">Read more</button>
+
+            </div>
+
+            <div class="box">
+                <span class="tech"><h4>Product Design</h4></span>
+                <p class="fit-text">We are responsible for designing Products by crafting intuitive, user-friendly digital experiences. We blend UX/UI design, user research, and prototyping in other to create products that meet our clients need and business goals. Our role involves designing interfaces, testing usability, and collaborating with developers and product managers to refine and improve digital products.
+                </p>
+            
+                <button class="readMore backend-button">Read more</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="contact">
+           <form action="post">
+            <h2 class="myServices" id="contact">Contact</h2>
+                <fieldset>
+                    <label for="name">
+                        Name: 
+                        <input id="name" type="text" placeholder="ex. John Doe" required>
+                    </label>
+                    <label for="email">
+                        Email: 
+                        <input id="email" type="email" placeholder="example@mail.com" required>
+                    </label>
+                   <label for="number">
+                        Contact:
+                        <input id="number" type="text" placeholder="+123456789" required>
+                   </label>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">
+                        <input name="gender" id="male" type="radio" value="male"> Male
+                    </label>
+                    <label for="female">
+                        <input name="gender" id="female" type="radio" value="female"> Female
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>In which area do you require our services?</legend>
+                    <label for="frontend">
+                        
+                        <input id="frontend" type="checkbox" name="stack" value="frontend"> Front End Development
+                    </label>
+                    <label for="backend">
+                        
+                        <input id="backend" type="checkbox" name="stack" value="backend"> Back End Development
+                    </label>
+                    <label for="design">
+                        
+                        <input id="design" type="checkbox" name="stack" value="design"> Product Design
+                    </label>
+                    <label for="analysis">
+                        
+                        <input id="analysis" type="checkbox" name="stack" value="analysis"> Data Analysis
+                    </label>
+                    <label for="others">
+                        
+                        <input id="others" type="checkbox" name="stack" value="others"> Others
+                    </label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>How do you hear about us? </legend>
+                    <select>
+                        <option disabled>Choose an option</option>
+                        <option value="search engine">Search engine</option>
+                        <option value="Friends">Friends</option>
+                        <option value="social media">Social Media</option>
+                        <option value="others">Others</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <Legend>Leave a message</Legend>
+                    <textarea placeholder="Please leave a message..."></textarea>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+           </form>
         </div>
 
     </section>
